@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+
+  api-app:
+    image: api-app
+    container_name: "api-app"
+    build: ./
+    command: ./api-app
+    ports:
+      - 8000:8000
+
+  auth-app:
+    image: auth-app
+    container_name: "auth-app"
+    build: ./
+    command: ./auth-app
+    ports:
+      - 8001:8001

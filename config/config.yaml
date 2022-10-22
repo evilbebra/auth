@@ -1,0 +1,9 @@
+api-app:
+  port: 8000
+
+auth-app:
+  port: 8001
+
+auth:
+  signing_key: "your_signing_key"
+  token_ttl: 120
